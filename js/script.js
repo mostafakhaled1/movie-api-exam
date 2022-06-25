@@ -2,7 +2,6 @@ $(document).ready(function(){
   $('.iconBar').click(function(){
     $('.iconToggelButton').toggleClass('close');
     $('.slideMenu').toggleClass('show');
-    // $('.animation').addCalss('wow bounceInUp animate__delay-2s');    ماتنساش الانيمشن
   })
 })
 let fullName = document.getElementById('Name');
