@@ -17,7 +17,8 @@ var navLinks = document.querySelectorAll(".nav-link");
 var treandMovie= [];
 var itemMovie ="";
 async function getData(){
-  //let myResponse = await fetch(`https://api.themoviedb.org/3/movie/${type}?api_key=11e108235fef823a7157ef00690999&language=en-US&page=1`);let myResponse = await fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=b3c3e4f87a6808403cbe2a94f7a28b9e");
+  //let myResponse = await fetch(`https://api.themoviedb.org/3/movie/${type}?api_key=11e108235fef823a7157ef00690999&language=en-US&page=1`);
+  let myResponse = await fetch("https://api.themoviedb.org/3/trending/movie/day?api_key=b3c3e4f87a6808403cbe2a94f7a28b9e");
   let myData = await myResponse.json();
   treandMovie=myData.results;
   displayMovie();
